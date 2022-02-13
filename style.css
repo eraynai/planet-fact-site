@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@700&display=swap');
+
 /* CSS Reset*/
 
 *, *::before, *::after {
@@ -29,3 +31,19 @@ p, h1, h2, h3, h4, h5, h6 {
  isolation: isolate;
 }
 
+/* Colors */
+
+:root {
+ --white: #ffffff;
+ --black: #070724;
+ --dark-grey: #38384F;
+ --light-grey: #838391;
+ --cyan: #419EBB;
+ --orange: #EDA249;
+ --purple: #6f2ed6;
+ --red: #D14C32;
+ --dark-red: #D83A34;
+ --dark-orange: #CD5120;
+ --light-green: #1ec2a4;
+ --blue: #2d68f0;
+}
