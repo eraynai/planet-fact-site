@@ -92,12 +92,13 @@ main {
 
 main {
  display:grid;
- grid-template-columns: 200px 400px 200px 500px;
- grid-template-rows: 1fr 1fr 1fr;
- grid-template-areas: 
- ". . . sub-header"
+ grid-template-columns: 1fr 400px 1fr 1fr;
+ grid-template-rows:200px 1fr 1fr 1fr;
+ grid-template-areas:
+ " . . . sub-header" 
  ". image . sub-header"
- ". image . menu";
+ ". image . sub-header"
+ ". . . menu";
 }
 
 .planet-image {
@@ -118,6 +119,7 @@ main {
  display: flex;
  justify-content: center;
  flex-direction: column;
+ margin-top: 4rem;
 }
 .planet-title h2 {
 font-family: 'Antonio', sans-serif;
