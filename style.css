@@ -87,18 +87,56 @@ nav .planets-nav h4:last-child {
 }
 
 main {
- display: flex;
+ padding: 0 10rem;
 }
 
-.planet-info h2 {
- font-family: 'Antonio', sans-serif;
+main {
+ display:grid;
+ grid-template-columns: 200px 400px 200px 500px;
+ grid-template-rows: 1fr 1fr 1fr;
+ grid-template-areas: 
+ ". . . sub-header"
+ ". image . sub-header"
+ ". image . menu";
+}
+
+.planet-image {
+ display: flex;
+ flex-direction: column;
+ grid-area: image;
+ justify-content: center;
+}
+
+
+.planet-info {
+ justify-self: center;
+}
+
+.planet-title{
+ 
+ grid-area: sub-header;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+}
+.planet-title h2 {
+font-family: 'Antonio', sans-serif;
  color: var(--white);
  font-size: 80px;
 }
 
-.planet-info p {
+.planet-title p {
  font-family: 'Spartan', sans-serif;
- color: var(--light-grey);
+ color: var(--white);
  font-size: 14px;
  font-weight: 400;
 }
+
+.planet-title p {
+ color: var(--light-grey);
+ font-family: 'Spartan', sans-serif;
+ font-size: 14px;
+ font-weight: 400;
+ margin-top: 2rem;
+}
+
